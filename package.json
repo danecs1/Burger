@@ -3,12 +3,26 @@
   "version": "1.0.0",
   "description": "### Overview",
   "main": "server.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danecs1/Burger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danecs1/Burger/issues"
+  },
+  "homepage": "https://github.com/danecs1/Burger#readme"
 }

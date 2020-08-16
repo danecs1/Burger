@@ -1,0 +1,35 @@
+<div class="container">
+    <h1>Burgers!</h1>
+
+    <h2>Burgers to be devoured</h2>
+
+    <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        <button class="eatMe" data-id="{{id}}" type="button">
+            {{ burger_name }} </button>
+        {{/unless}}
+        {{/each}}
+    </ul>
+
+
+    <h2>Burgers that have been devoured</h2>
+
+    <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+        {{ burger_name }} ||
+        {{/if}}
+        {{/each}}
+    </ul>
+
+    <h2>Add a Burger</h2>
+    <form class="create-form">
+        <div>
+            <label for="burgerAdd">Burger Type</label>
+            <input type="text" id="burger" name="burger_name">
+        </div>
+
+        <button type="submit" class="submit">Add Burger</button>
+    </form>
+</div>
