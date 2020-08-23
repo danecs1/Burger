@@ -3,7 +3,7 @@ const mysql = require('mysql');
 
 console.log('PROCESS', process.env.NODE_ENV);
 if (process.env.NODE_ENV !== 'development') {
-    mysql.createConnection(process.env.CLEARDB_DATABASE_URL)
+    mysql.createConnection(process.env.DATABASE_URL)
 }
 
 const connection = mysql.createConnection({
