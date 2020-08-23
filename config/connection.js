@@ -1,6 +1,10 @@
 require('dotenv').config();
 const mysql = require('mysql');
 
+console.log('PROCESS', process.env.NODE_ENV);
+if (process.env.NODE_ENV !== 'development') {
+    mysql.createConnection(process.env.CLEARDB_DATABASE_URL)
+}
 
 const connection = mysql.createConnection({
     host: 'localhost',
