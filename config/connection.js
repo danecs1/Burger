@@ -1,10 +1,11 @@
+require('dotenv').config();
 const mysql = require('mysql');
 
 
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'password',
+    password: process.env.PASSWORD,
     database: 'burgers_db'
 });
 

@@ -30,7 +30,7 @@ $('.eatMe').click(function () {
         method: 'PUT',
         data: devourState
     }).then(function (data) {
-        console.log("NOM NOM NOM")
+        console.log('ID', data.id);
         location.reload();
     })
 })

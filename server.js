@@ -1,4 +1,5 @@
 //require express library(important)
+require('dotenv').config();
 const express = require('express');
 const routes = require('./controllers/burgers_controller');
 

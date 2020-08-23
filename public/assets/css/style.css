@@ -1,9 +1,24 @@
 .container {
-  max-width: 500px;
-  margin: auto;
-  background-color: #3f69fb;
+  max-width: 700px;
+  margin: 0;
+  /**background-color: #3f69fb;*/
 }
 
 .eatme {
-  color: black;
+  color: rgb(234, 243, 237);
 }
+
+body {
+  background-image: url("/assets/img/burger.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 150px;
+  display: auto;
+  flex-direction: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
