@@ -1,7 +1,10 @@
 .container {
   max-width: 700px;
-  margin: 0;
-  /**background-color: #3f69fb;*/
+  height: auto;
+  margin: 75%;
+  display:auto ;
+  border-width: inherit;
+  max-width: 20ch;
 }
 
 .eatme {
@@ -9,16 +12,40 @@
 }
 
 body {
-  background-image: url("/assets/img/burger.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url(../img/burgerimg.png);
+  background-size: 100%;
+  background-position: right;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 800px;
   width: 150px;
   display: auto;
   flex-direction: auto;
   justify-content: center;
-  align-items: center;
   padding: 0 50px;
+  font-size: larger ;
+  font-family:  Calibri;
+  color: rgba(250, 106, 10, 0.995);
+  
 }
 
+
+h1{
+  text-align: left;
+  width: 20em;
+  margin-left:initial; 
+
+}
+
+h2{
+  width: 20em;
+}
+
+ul{
+  text-align:left;
+  width: 15em;
+  
+}
+
+form{
+  width: 20em;
+}

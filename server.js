@@ -7,7 +7,7 @@ const routes = require('./controllers/burgers_controller');
 const expressHB = require('express-handlebars');
 
 //specify port the application will run on(important)
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 8080;
 
 //create an instance of express from line 1(important)
 const app = express();

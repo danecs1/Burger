@@ -11,7 +11,6 @@ if (process.env.NODE_ENV !== 'development') {
 connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: process.env.PASSWORD,
     database: 'burgers_db'
 });
 
